@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Functionsandclasses</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Functions and classes</h1>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <h4>function</h4>
+            <p>Declares a function with the specified parameters.</p>
+            <ul>JavaScript Demo: Statement - Function
+                <li>function calcRectArea(width, height) {</li>
+                <li>&nbsp&nbsp  return width * height;</li>
+                <li>}</li>
+                <li>// expected output: 30</li>
+                <li>
+                    console.log(calcRectArea(5, 6));</li>
+                
+            </ul>
+            <hr>
+            <h4>function*</h4>
+            <p>Generator Functions enable writing iterators more easily.</p>
+            <ul>JavaScript Demo: Statement - Function*
+                <li>function* generator(i) {</li>
+                <li>&nbsp&nbsp   yield i;</li>
+                <li>&nbsp&nbsp yield i + 10;</li>
+                <li>}</li>
+                <li></li>
+                <li>const gen = generator(10);</li>
+                <li></li>
+                <li>
+                    console.log(gen.next().value);</li>
+                <li>// expected output: 10</li>
+                <li></li>
+                <li>
+                    console.log(gen.next().value);</li>
+                <li>// expected output: 20</li>
+            </ul>
+            <hr>
+            <h4>async function</h4>
+            <p>Declares an async function with the specified parameters.</p>
+            <ul>JavaScript Demo: Statement - Return
+                <li>function getRectArea(width, height) {</li>
+                <li>&nbsp&nbsp  if (width > 0 && height > 0) {</li>
+                <li>&nbsp&nbsp&nbsp    return width * height;</li>
+                <li> }</li>
+                <li>&nbsp&nbsp   return 0;</li>
+                <li>}</li>
+                <li></li>
+                <li>console.log(getRectArea(3, 4));</li>
+                <li>// expected output: 12</li>
+                <li></li>
+                <li>console.log(getRectArea(-3, 4));</li>
+                <li>// expected output: 0</li>
+            </ul>
+            <hr>
+            <a class="btn btn-primary btn-lg" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#control_flow" role="button">Learn more</a>
+          </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
